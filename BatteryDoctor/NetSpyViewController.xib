@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetSpyViewController">
+            <connections>
+                <outlet property="advBgView" destination="gil-lD-2R7" id="vvm-Z2-Hdm"/>
+                <outlet property="resultLab" destination="ZQ9-wH-MOa" id="TYC-Rm-Xnv"/>
+                <outlet property="tableView" destination="a5Z-g6-LDw" id="OBS-YD-pVG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gil-lD-2R7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ9-wH-MOa">
+                            <rect key="frame" x="10" y="55" width="355" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="NA4-bR-4XX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZQ9-wH-MOa" firstAttribute="leading" secondItem="gil-lD-2R7" secondAttribute="leading" constant="10" id="1Sn-6l-yzN"/>
+                        <constraint firstAttribute="trailing" secondItem="ZQ9-wH-MOa" secondAttribute="trailing" constant="10" id="9p7-pL-Rc0"/>
+                        <constraint firstAttribute="bottom" secondItem="ZQ9-wH-MOa" secondAttribute="bottom" constant="5" id="Qfg-C7-6uI"/>
+                        <constraint firstAttribute="height" constant="80" id="dtN-8N-7MT"/>
+                        <constraint firstItem="ZQ9-wH-MOa" firstAttribute="top" secondItem="gil-lD-2R7" secondAttribute="top" constant="64" id="hYA-GK-dba"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hYA-GK-dba"/>
+                        </mask>
+                    </variation>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a5Z-g6-LDw">
+                    <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Som-wK-f09"/>
+                        <outlet property="delegate" destination="-1" id="xNX-yr-wny"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gil-lD-2R7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1hi-MC-YI5"/>
+                <constraint firstItem="a5Z-g6-LDw" firstAttribute="top" secondItem="gil-lD-2R7" secondAttribute="bottom" id="CwC-ye-5GQ"/>
+                <constraint firstAttribute="trailing" secondItem="a5Z-g6-LDw" secondAttribute="trailing" id="HtY-qI-MEp"/>
+                <constraint firstItem="a5Z-g6-LDw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KL3-0M-iLt"/>
+                <constraint firstItem="a5Z-g6-LDw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KhA-xa-Fsr"/>
+                <constraint firstAttribute="bottom" secondItem="a5Z-g6-LDw" secondAttribute="bottom" id="Rcf-aa-a9P"/>
+                <constraint firstItem="gil-lD-2R7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lcF-Dd-uxC"/>
+                <constraint firstAttribute="trailing" secondItem="gil-lD-2R7" secondAttribute="trailing" id="pkN-ir-Rlg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KL3-0M-iLt"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="15" y="143"/>
+        </view>
+    </objects>
+</document>

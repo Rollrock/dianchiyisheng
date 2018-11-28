@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WangSuViewController">
+            <connections>
+                <outlet property="pointImgView" destination="Fgp-H9-ASM" id="yGZ-KH-p8V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPL-9i-ae0">
+                    <rect key="frame" x="40" y="186" width="295" height="295"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fgp-H9-ASM">
+                            <rect key="frame" x="137.5" y="87.5" width="20" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="60y-ho-xuI"/>
+                                <constraint firstAttribute="height" constant="120" id="CUR-78-b3P"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Fgp-H9-ASM" firstAttribute="centerX" secondItem="pPL-9i-ae0" secondAttribute="centerX" id="bdx-dc-NGg"/>
+                        <constraint firstItem="Fgp-H9-ASM" firstAttribute="centerY" secondItem="pPL-9i-ae0" secondAttribute="centerY" id="evZ-oX-J9m"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pPL-9i-ae0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="5W3-xx-QqI"/>
+                <constraint firstItem="pPL-9i-ae0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ALo-Sl-oHK"/>
+                <constraint firstItem="pPL-9i-ae0" firstAttribute="width" secondItem="pPL-9i-ae0" secondAttribute="height" multiplier="1:1" id="IRQ-KU-9sr"/>
+                <constraint firstAttribute="trailing" secondItem="pPL-9i-ae0" secondAttribute="trailing" constant="40" id="yAH-at-mvy"/>
+            </constraints>
+            <point key="canvasLocation" x="-163" y="-30"/>
+        </view>
+    </objects>
+</document>
